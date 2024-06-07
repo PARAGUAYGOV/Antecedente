@@ -5,14 +5,11 @@ html, body {
     overflow: hidden;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    font-size: 16px; /* Ajusta el tamaño de la fuente según sea necesario */
-    line-height: 1.5; /* Espaciado entre líneas para mejorar la legibilidad */
 }
 
 embed {
     display: block;
     width: 100vw; /* Usa el ancho total del viewport */
     height: 100vh; /* Usa el alto total del viewport */
-    border: 1px solid #ccc; /* Borde sutil para mejorar la apariencia */
-    object-fit: contain; /* Ajuste del PDF al contenedor */
-}
+    border: none;
+} 
