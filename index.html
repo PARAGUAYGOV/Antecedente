@@ -6,25 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="favicon.ico" sizes="100x100">
     <style>
-        html, body {
+        body {
             margin: 0;
             padding: 0;
-            height: 100%;
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        object {
-            display: block;
-            width: 100vw; /* Usa el ancho total del viewport */
-            height: 100vh; /* Usa el alto total del viewport */
-            border: none;
+        #pdf-container {
+            width: 100vw;
+            height: 100vh;
         }
     </style>
 </head>
 <body>
-    <object data="documento.pdf" type="application/pdf"></object>
+    <div id="pdf-container">
+        <object data="documento.pdf" type="application/pdf"></object>
+    </div>
 </body>
 </html>
