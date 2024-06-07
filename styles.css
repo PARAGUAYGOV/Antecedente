@@ -1,11 +1,15 @@
 html, body {
     margin: 0;
+    padding: 0;
     height: 100%;
-    overflow: hidden; /* Evitar scroll vertical */
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
+
 embed {
     display: block;
-    width: 100%;
-    height: 100vh;
+    width: 100vw; /* Usa el ancho total del viewport */
+    height: 100vh; /* Usa el alto total del viewport */
     border: none;
 }
