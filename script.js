@@ -1,13 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     var pdfEmbed = document.getElementById("pdf-embed");
-    var errorMessage = document.getElementById("error-message");
 
     // Intenta cargar el PDF y detecta errores
     pdfEmbed.addEventListener('error', function() {
-        // Oculta el PDF embed
-        pdfEmbed.style.display = "none";
-        // Muestra el mensaje de error
-        errorMessage.style.display = "block";
+        // Redirige a la descarga del PDF
+        window.location.href = "documento.pdf";
     });
 
     // Verifica si el PDF se ha cargado correctamente
