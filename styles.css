@@ -23,14 +23,14 @@ html, body {
 #pdf-holder {
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: 100%;
     max-height: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 embed {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 p {
