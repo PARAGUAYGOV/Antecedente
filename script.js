@@ -3,17 +3,18 @@ document.addEventListener("DOMContentLoaded", function() {
     var errorMessage = document.getElementById("error-message");
 
     // Intenta cargar el PDF y detecta errores
-    pdfEmbed.onerror = function() {
+    pdfEmbed.addEventListener('error', function() {
         // Oculta el PDF embed
         pdfEmbed.style.display = "none";
         // Muestra el mensaje de error
         errorMessage.style.display = "block";
-    };
+    });
 
     // Verifica si el PDF se ha cargado correctamente
     setTimeout(function() {
-        if (!pdfEmbed.contentDocument || pdfEmbed.contentDocument.body.childNodes.length === 0) {
-            pdfEmbed.onerror();
+        var isPdfLoaded = pdfEmbed.contentDocument && pdfEmbed.contentDocument.body.childNodes.length > 0;
+        if (!isPdfLoaded) {
+            pdfEmbed.dispatchEvent(new Event('error'));
         }
     }, 1000);
 });
