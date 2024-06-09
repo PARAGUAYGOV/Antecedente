@@ -5,28 +5,11 @@
     <title>Portal Paraguay | Antecedente</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="favicon.ico" sizes="100x100">
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
-        embed {
-            width: 100%;
-            max-width: 800px; /* Limita el ancho máximo para que no se vea demasiado grande */
-            height: 100vh;
-            max-height: 1200px; /* Limita el alto máximo para que no se vea demasiado largo */
-            border: none;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <embed src="documento.pdf" type="application/pdf">
+    <div class="pdf-container">
+        <embed src="documento.pdf" type="application/pdf">
+    </div>
 </body>
 </html>
